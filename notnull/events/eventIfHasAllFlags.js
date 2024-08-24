@@ -129,5 +129,6 @@ export const compile = (input, helpers) => {
   if (input.flag15) flag |= 0x4000
   if (input.flag16) flag |= 0x8000
 
-  ifVariableBitwiseValue(input.variable, '.B_AND', flag, truePath, falsePath)
+  // TODO: logic is inverted here, but I could not get it to work
+  ifVariableBitwiseValue(input.variable, '.B_XOR', flag, falsePath, truePath)
 }
