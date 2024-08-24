@@ -1,4 +1,4 @@
-// if for "has all flags"
+// if for "has any flags"
 
 export const id = 'NOTNULL_IF_FLAGS_HAS_ANY'
 
